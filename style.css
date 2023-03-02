@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(175deg, #2dffeb, #2196f3);
+}
+.parent {
+  width: 450px;
+  background: white;
+  padding: 15px;
+  border-radius: 3px;
+}
+.parent h2 {
+  margin: 10px 0px;
+}
+.parent .input {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.parent .input input:focus {
+  border-color: #3d3d3d;
+}
+.parent .add {
+  width: 30px;
+  color: white;
+  height: 30px;
+  display: flex;
+  background: #d562e996;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.parent .add.active {
+  background: #b900d9;
+}
+.parent input {
+  outline: none;
+  height: 100%;
+  border: 1px solid #bdbdbd;
+  width: 380px;
+  padding: 0px 0px 0px 10px;
+  border-radius: 3px;
+}
+.parent .clear {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.parent .clear span {
+  padding: 5px;
+  background: #d562e996;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.parent .clear span.active {
+  background: #b900d9;
+}
+.parent .data {
+  display: flex;
+  justify-content: space-between;
+  background: #e0e0e0;
+  border-radius: 3px;
+  height: 40px;
+  align-items: center;
+  padding-left: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.datas {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.data button {
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background: red;
+  color: white;
+  position: absolute;
+  right: -40px;
+  transition: 0.5s all;
+}
+.data:hover button {
+  right: 0px;
+}
